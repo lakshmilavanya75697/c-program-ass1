@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+	int n,ele,i,low;
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		scanf("%d",&ele);
+		if(i==1)low=ele;
+		if(ele<low)
+		low=ele;
+		i++;
+	}
+	printf("lowest number=%d\n",low);
+}
